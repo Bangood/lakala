@@ -1,0 +1,124 @@
+doctype html
+html(lang="zh")
+    include ../../shared/head.pug
+    style. 
+        .border-dashed {
+            border-bottom: dashed #D5D5D5 1px
+        }
+        .page-title {
+            background: #03a8e3;
+        }
+        .page-title h1 {
+            width: 100%;
+            font-size: 24px;
+            color: #fff;
+            font-weight: normal;
+            text-transform: uppercase
+        }
+        .page-title h1 a {
+            font-size: 14px;
+            color: #fff;
+        }
+        .mt-10 {
+            margin-top: 10px;
+        }
+        .show-img {
+            width: 100%;
+            max-width: 460px;
+        }
+        a {
+            color: #666;
+            
+        }
+        a:hover {
+            color: #117dc2;
+            text-decoration: none;
+        }
+        .img-width-100 {
+            width: 100%;
+        }
+        h3 {
+            font-size:15px;
+            color: #666;
+            overflow: hidden;
+            height:41px;
+            margin-bottom:0;
+            text-align:left;
+        }
+        .caption p {
+            height: 54px;
+            font-size: 12px;
+            width:100%;
+            overflow: hidden;
+            color: #999;
+            margin-top:5px;
+            text-overflow:ellipsis;
+        }
+    body
+        include ../../shared/navigation.pug
+        #wrapper
+            #page-wrapper.container-fluid
+                .row.page-title
+                    .col-md-1
+                    .col-md-10
+                        h1 资讯中心 
+                            a news
+                    .col-md-1
+                .row.mt-10
+                    .col-md-1
+                    .col-md-10.border-dashed
+                       | 您现在的位置:
+                       a(href='/') 首页
+                       | >
+                       a(href='/about-us') 关于我们
+                       | >
+                       a 资讯中心
+                    .col-md-1
+                .row
+                    .col-md-3
+                        .thumbnail
+                            img(src='http://cdsykj.gotoip11.com/wp-content/themes/simplespace/thumbnails/case.jpg')
+                            .caption
+                                h3 考拉超收C位出道，作为MPOS它有什么优点
+                                p 什么是MPOS Mpos，指的是通过和使用特定的应用程序的移动设备连接的外接专用设备采集银联卡相关信息（含交易密码）并加密，由...
+                                p.text-center
+                                    a.btn.btn-primary(href='',role='button') 查看详细说明
+                    .col-md-3
+                        .thumbnail
+                            img(src='http://www.sclakala.cn/wp-content/uploads/2019/03/zx-307x204.jpg')
+                            .caption
+                                h3 征信和贷款的6大误区，个人征信记录已成为每
+                                p “图书免押金借用” “充电宝、手机、电脑等数码产品免押金借用” “租车不需要交押金” 互联网和移动生活已经变得形影不离 征信与...
+                                p.text-center
+                                    a.btn.btn-primary(href='',role='button') 查看详细说明
+                    .col-md-3
+                        .thumbnail
+                            img(src='http://www.sclakala.cn/wp-content/uploads/2019/03/1-6-307x204.jpg')
+                            .caption
+                                h3 蜻蜓“刷脸”支付POS，靠脸吃饭成为可能
+                                p “刷脸”支付系统是一款基于脸部识别系统的支付平台，它于2013年7月由芬兰创业公司Uniqul全球首次推出。支付时只需要面对POS机...
+                                p.text-center
+                                    a.btn.btn-primary(href='',role='button') 查看详细说明
+                    .col-md-3
+                        .thumbnail
+                            img(src='http://www.sclakala.cn/wp-content/uploads/2019/03/2-2-307x204.jpg')
+                            .caption
+                                h3 信用卡收费陷阱，会悄悄影响你的征信记录
+                                p 叩叩叩，敲黑板 信用卡申请达人们 以下细节要注意啦 一不小心就影响征信记录哦 信用卡不激活 不开卡还需要收取额外费用? 在平...
+                                p.text-center
+                                    a.btn.btn-primary(href='',role='button') 查看详细说明
+                .row 
+                    .col-md-3
+                        .thumbnail
+                            img(src='http://www.sclakala.cn/wp-content/uploads/2019/03/2-1-307x204.jpg')
+                            .caption
+                                h3 畅所欲“付”，为什么POS机屹然成为你的支付必...
+                                p POS机用途何在 适用于大、中型超市、连锁店、大卖场、大、中型饭店及一切高水平管理的零售企业。 具有IC卡功能，可使用会员卡...
+                                p.text-center
+                                    a.btn.btn-primary(href='',role='button') 查看详细说明
+                    .col-md-3
+                    .col-md-3
+                    .col-md-3
+                        
+
+            include ../../shared/footer.pug

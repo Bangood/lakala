@@ -1,0 +1,881 @@
+style. 
+    @charset "utf-8";
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        div,
+        ol,
+        ul,
+        li,
+        dl,
+        dt,
+        dd,
+        table,
+        caption,
+        tr,
+        th,
+        td,
+        span,
+        p,
+        a,
+        b,
+        u,
+        i,
+        em,
+        img,
+        iframe,
+        fieldset,
+        form,
+        label,
+        legend,
+        input,
+        button,
+        select,
+        textarea {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font: 12px/1.5 "微软雅黑", Arial, Tahoma, Helvetica, sans-serif;
+            color: #666;
+            background-color: #fff;
+            margin: auto;
+        }
+        
+        input,
+        button,
+        textarea,
+        select {
+            font: inherit;
+            outline: 0;
+            border: 0;
+            background: none;
+            color: inherit;
+        }
+        
+        input:focus,
+        textarea:focus {
+            color: inherit;
+        }
+        
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            border: 0;
+        }
+        
+        ol,
+        ul,
+        li {
+            list-style: none;
+        }
+        
+        input,
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        
+        textarea {
+            overflow: auto;
+            resize: none;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border: 0;
+        }
+        
+        img {
+            border: 0;
+            outline: 0;
+            vertical-align: middle;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        
+        a:focus {
+            outline: 0;
+        }
+        
+        svg:not(:root) {
+            overflow: hidden;
+        }
+        
+        input[type=date] {
+            background-color: transparent;
+            border: 0;
+            filter: alpha(opacity=0);
+        }
+        
+         ::-ms-clear,
+         ::-ms-reveal {
+            display: none;
+        }
+        /* WebKit browsers */
+        
+         ::-webkit-input-placeholder {
+            color: #909090;
+        }
+        /* Mozilla Firefox 4 to 18 */
+        
+         :-moz-placeholder {
+            color: #909090;
+            opacity: 1;
+        }
+        /* Mozilla Firefox 19+ */
+        
+         ::-moz-placeholder {
+            color: #909090;
+            opacity: 1;
+        }
+        /* Internet Explorer 10+ */
+        
+         :-ms-input-placeholder {
+            color: #909090;
+        }
+        
+        .placeholder {
+            color: #909090;
+        }
+        
+        .xfont {
+            font-family: "xfont" !important;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .h30,
+        .h28,
+        .h26,
+        .h24,
+        .h22,
+        .h20,
+        .h18,
+        .h16 {
+            line-height: 1.2;
+        }
+        
+        .h30 {
+            font-size: 30px;
+        }
+        
+        .h28 {
+            font-size: 28px;
+        }
+        
+        .h26 {
+            font-size: 26px;
+        }
+        
+        .h24 {
+            font-size: 24px;
+        }
+        
+        .h22 {
+            font-size: 22px;
+        }
+        
+        .h20 {
+            font-size: 20px;
+        }
+        
+        .h18 {
+            font-size: 18px;
+        }
+        
+        .h16 {
+            font-size: 16px;
+        }
+        
+        .clear:after,
+        .x-wrap:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        
+        .middle {
+            font-size: 0;
+            letter-spacing: -1.5em;
+        }
+        
+        .middle:after {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+        
+        .middle-cont {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 14px;
+            letter-spacing: 0;
+        }
+        
+        .justify {
+            word-break: break-all;
+            text-align: justify;
+            text-justify: inter-ideograph;
+        }
+        
+        .justify:after {
+            content: '';
+            padding-left: 100%;
+        }
+        
+        .pos-fix {
+            position: fixed !important;
+            left: 0;
+            top: 0;
+        }
+        
+        .pos-abs {
+            position: absolute !important;
+            left: 0;
+            top: 0;
+        }
+        
+        .x-wrap {
+            position: relative;
+            width: 1180px;
+            margin: auto;
+        }
+        
+        .x-header,
+        .x-footer,
+        .x-container {
+            position: relative;
+            width: 100%;
+            min-width: 1250px;
+            margin: 0 auto;
+        }
+        
+        .x-container {
+            overflow: hidden;
+        }
+        
+        .ov {
+            visibility: hidden;
+        }
+        
+        .p-show {
+            display: block;
+        }
+        
+        .m-show {
+            display: none;
+        }
+        
+        .pc {
+            display: block !important;
+        }
+        
+        .phone {
+            display: none !important;
+        }
+        
+        .phone-show {
+            display: none;
+        }
+        
+        @media screen and (min-width:751px) {
+            .x-header {
+                height: 112px;
+                z-index: 100;
+            }
+            .x-header .logo {
+                position: absolute;
+                left: 0;
+                top: 28px;
+                overflow: hidden;
+            }
+            .x-header .logo a {
+                display: block;
+            }
+            .x-header .logo img {
+                display: block;
+                width: 150px;
+                height: auto;
+            }
+            .nav-mod {
+                position: absolute;
+                left: 290px;
+                top: 25px;
+            }
+            .nav-mod .nav-link {
+                display: block;
+                white-space: nowrap;
+            }
+            .nav-mod .nav-link:hover {
+                color: #ff5705;
+            }
+            .nav-mod .nav-item {}
+            .nav-mod .two {
+                opacity: 0;
+                visibility: hidden;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+            .nav-mod .nav-lv1 .nav-item:hover .two {
+                opacity: 1;
+                visibility: visible;
+            }
+            .nav-mod .nav-lv1 .nav-item {
+                position: relative;
+                float: left;
+            }
+            .nav-mod .nav-lv1 .nav-link {
+                padding: 20px 3px;
+                font-size: 16px;
+                position: relative;
+                transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+            }
+            .nav-mod .nav-lv1 .nav-item .nav-tit {
+                padding: 0 25px;
+            }
+            .nav-mod .nav-item .nav-link:hover,
+            .nav-mod .nav-item.cur .nav-link {
+                color: #00b9f1;
+            }
+            .nav-mod .nav-item.cur .nav-link .arr,
+            .nav-mod .nav-item .nav-link:hover .arr {
+                width: 100%;
+            }
+            .nav-mod .nav-item .nav-link .arr {
+                width: 0;
+                height: 4px;
+                position: absolute;
+                left: 0;
+                background: #00b9f1;
+                transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+                bottom: 13px;
+            }
+            .nav-mod .two {
+                position: absolute;
+                left: 50%;
+                top: 90%;
+                padding: 20px 0 12px;
+                width: 160px;
+                margin-left: -80px;
+            }
+            .nav-mod .two .line1 {
+                background: url(http://www.lakala.com/templets/default/image/temp/nav1.png) no-repeat center bottom;
+                width: 100%;
+                height: 20px;
+                left: 0;
+                top: 0;
+                position: absolute;
+                display: block;
+            }
+            .nav-mod .two .line2 {
+                background: url(http://www.lakala.com/templets/default/image/temp/nav3.png) no-repeat center top;
+                width: 100%;
+                height: 12px;
+                left: 0;
+                bottom: 0;
+                position: absolute;
+                display: block;
+            }
+            .nav-mod .two .second {
+                background: url(http://www.lakala.com/templets/default/image/temp/nav2.png) repeat-y center 0;
+            }
+            .nav-mod .two .second .a {
+                width: 106px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .nav-mod .two .second .a a {
+                display: block;
+                /* padding-left: 10px; */
+                font-size: 14px;
+                line-height: 31px;
+                transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+            }
+            .nav-mod .two .second .a a:hover,
+            .nav-mod .two .second .a.cur a {
+                background: #00b9f1;
+                color: #fff;
+            }
+        }
+        
+        .x-footer .r br {
+            display: none;
+        }
+        
+        @media screen and (max-width: 750px) {
+            *,
+            *:before,
+            *:after {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            body {
+                font-size: 0.26rem;
+            }
+            .x-wrap {
+                position: relative;
+                margin: auto;
+                padding: 0 0.55rem;
+                width: 100%;
+            }
+            .x-header,
+            .x-footer,
+            .x-container {
+                position: relative;
+                margin: auto;
+                width: 100%;
+                min-width: 320px;
+                z-index: 1;
+            }
+            .p-show {
+                display: none;
+            }
+            .m-show {
+                display: block;
+            }
+            .phone-show {
+                display: inline;
+            }
+            .pc {
+                display: none !important;
+            }
+            .phone {
+                display: block !important;
+            }
+            body {
+                overflow-x: hidden;
+            }
+            .menu-btn {
+                cursor: pointer;
+                position: absolute;
+                width: 0.6rem;
+                height: 0.6rem;
+                background: url(http://www.lakala.com/templets/default/image/phone/menu.jpg) no-repeat center/100% 100%;
+                top: 50%;
+                right: 0.55rem;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+            .menu-open {
+                z-index: 999;
+            }
+            .nav-mod {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                width: 50%;
+                right: 0;
+                background: url(http://www.lakala.com/templets/default/image/phone/nav1.jpg) repeat-y 0 0/100% auto;
+                overflow: hidden;
+                z-index: 1001;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-transition: all 0.5s linear;
+                transition: all 0.5s linear;
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            .menu-open .nav-mod {
+                -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+            .nav-mod .shadow {
+                position: absolute;
+                width: 0.24rem;
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: 20;
+                background: url(http://www.lakala.com/templets/default/image/phone/nav_5.jpg) repeat-y 0 0/100% auto;
+            }
+            .nav-mod .logo2 {
+                height: 1rem;
+                line-height: 1rem;
+                text-align: center;
+                background: url(http://www.lakala.com/templets/default/image/phone/nav.jpg) repeat 0 0/auto 100%;
+            }
+            .nav-mod .logo2 img {
+                display: inline-block;
+                vertical-align: middle;
+                width: 1.8rem;
+            }
+            .nav-mod .back {
+                height: 1.08rem;
+                display: block;
+                background: url(http://www.lakala.com/templets/default/image/phone/nav2.jpg) repeat 0 0/auto 100%;
+            }
+            .nav-mod .back a {
+                display: block;
+                height: 100%;
+                background: url(http://www.lakala.com/templets/default/image/phone/nav1.png) no-repeat center/auto 0.4rem;
+            }
+            .nav-mod .search-box {
+                background: url(http://www.lakala.com/templets/default/image/phone/nav3.jpg) repeat-x 0 bottom;
+                padding: 0.6rem 0;
+                text-align: center;
+            }
+            .nav-mod .search-txt {
+                position: relative;
+                width: 2.3rem;
+                margin: 0 auto;
+                padding: 0;
+                background: url(http://www.lakala.com/templets/default/image/phone/nav_2.png) no-repeat 0 0/100% 100%;
+                height: 0.5rem;
+                float: none;
+                -webkit-box-flex: 1;
+                -webkit-flex-grow: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                -webkit-flex-shrink: 1;
+                -ms-flex-negative: 1;
+                flex-shrink: 1
+            }
+            .nav-mod .search-txt input {
+                display: block;
+                width: 100%;
+                height: 0.4rem;
+                font-size: 0.28rem;
+                padding: 0rem 0.8rem 0 0.2rem;
+                position: relative;
+                top: 0.05rem;
+                color: #333;
+                text-align: left;
+            }
+            .nav-mod .search-txt input::-webkit-input-placeholder {
+                color: #333;
+            }
+            .nav-mod .search-txt input:-moz-placeholder {
+                color: #333;
+                opacity: 1;
+            }
+            .nav-mod .search-txt input::-moz-placeholder {
+                color: #333;
+                opacity: 1;
+            }
+            .nav-mod .search-btn {
+                position: absolute;
+                width: 0.8rem;
+                height: 100%;
+                background: url(http://www.lakala.com/templets/default/image/phone/nav_3.png) no-repeat center/0.23rem 0.3rem;
+                right: 0;
+                top: 0;
+            }
+            .nav-mod .nav-tit {
+                padding: 0.25rem 0rem 0.25rem 0.7rem;
+                font-size: 0.28rem;
+                line-height: 0.4rem;
+                position: relative;
+            }
+            .nav-mod .nav-tit .arr {
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 0.9rem;
+                overflow: hidden;
+                right: 0;
+                top: 0rem;
+            }
+            .nav-mod .nav-tit .arr:after {
+                content: "";
+                position: absolute;
+                width: 0.32rem;
+                height: 0.32rem;
+                top: 50%;
+                right: 0.25rem;
+                margin: -0.16rem 0 0 0rem;
+                background: url(http://www.lakala.com/templets/default/image/phone/nav_4.png) no-repeat center/100% 100%;
+            }
+            .nav-mod .nav-tit+.nav-lv {
+                display: none;
+            }
+            .nav-mod .nav-lv1 {
+                font-size: 1.5em;
+                overflow-y: auto;
+                height: 0;
+                -webkit-box-flex: 1;
+                -webkit-flex-grow: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                -webkit-flex-shrink: 1;
+                -ms-flex-negative: 1;
+                flex-shrink: 1;
+            }
+            .nav-mod .nav-lv2 {
+                font-size: 0.8em;
+                color: #474747;
+                padding: 0.2rem 0;
+            }
+            .nav-mod .nav-lv3 {
+                background-color: #fff;
+                font-size: 0.8em;
+                color: #474747;
+            }
+            .nav-mod .nav-lv3 .nav-link {
+                text-indent: 2em;
+            }
+            .nav-mod .nav-item {}
+            .nav-mod .nav-lv1>.nav-item {
+                background: url(http://www.lakala.com/templets/default/image/phone/nav3.jpg) repeat-x 0 bottom;
+            }
+            .nav-mod .nav-lv1 .nav-item.act .one {
+                background: url(http://www.lakala.com/templets/default/image/phone/nav4.jpg) no-repeat 0 0/100% 100%;
+                color: #fff;
+                text-shadow: 0px 0.02rem 0.05rem rgba(0, 0, 0, 0.2);
+            }
+            .nav-mod .nav-item.act>.nav-tit .arr:after {
+                background-image: url(http://www.lakala.com/templets/default/image/phone/nav_4a.png);
+                border-radius: 50%;
+                box-shadow: 0.01rem 0.03rem 0.05rem rgba(0, 0, 0, 0.2);
+            }
+            .nav-mod .nav-lv2 .nav-item.act {
+                color: #474747;
+                background: url(http://www.lakala.com/templets/default/image/phone/nav5.jpg) no-repeat 0 0/100% 100%;
+            }
+            .nav-mod .nav-tit .nav-link img {
+                height: 0.4rem;
+                padding-right: 0.1rem;
+            }
+            .x-header {
+                height: 1rem;
+                z-index: 1000;
+                position: fixed;
+                background: #fff;
+                left: 0;
+                top: 0;
+                width: 100%;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1)
+            }
+            .x-header .menu-head {
+                position: relative;
+                height: 100%;
+                z-index: 10;
+            }
+            .x-header .logo {
+                position: absolute;
+                left: 0.55rem;
+                top: 50%;
+                width: 1.8rem;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+            .x-header .logo a {
+                display: block;
+            }
+            .x-header .logo img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            .x-container {
+                padding-top: 1rem;
+            }
+            .navBg {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: 1001;
+                background: rgba(0, 0, 0, 0.5);
+                left: 0;
+                top: 0;
+                transition: all 0.5s linear;
+                -webkit-transition: all 0.5s linear;
+                opacity: 0;
+                visibility: hidden;
+            }
+            .body,
+            .x-header {
+                -webkit-transition: all 0.5s linear;
+                transition: all 0.5s linear;
+            }
+            .menu-open .body,
+            .menu-open .x-header {
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+            /*  .x-header{ -webkit-transition: all 0.5s linear; transition: all 0.5s linear; position: relative; left: 0; }
+
+   	.menu-open .x-header{ left: -50%; } */
+            .menu-open .navBg {
+                opacity: 1;
+                visibility: visible;
+            }
+            .slick-dots {
+                bottom: 0.4rem;
+            }
+            .nav-mod .nav-lv2 .nav-tit {
+                padding: 0;
+            }
+            .nav-mod .nav-lv2 .nav-tit .nav-link {
+                display: block;
+                padding: 0.15rem 0 0.15rem 0.9rem;
+            }
+        }    
+a.navBg(href='javascript:;') 
+.nav-mod.m-show
+    .logo2
+        img(src='http://www.lakala.com/templets/default/image/temp/logo.png')
+    ul.nav-lv.nav-lv1.clear
+        li.nav-item
+            .nav-tit.one
+                a.nav-links 关于我们
+                span.arr
+            ul.nav-lv.nav-lv2
+                li.nav-item
+                    .nav-tit
+                        a.nav-link 公司简介
+                li.nav-item
+                    .nav-tit
+                        a.nav-link 发展历程
+                li.nav-item
+                    .nav-tit
+                        a.nav-link 资讯中心
+                li.nav-item
+                    .nav-tit
+                        a.nav-link 商业合作
+                li.nav-item
+                    .nav-tit
+                        a.nav-link 合作伙伴
+                li.nav-item
+                    .nav-tit
+                        a.nav-link 招贤纳士
+        li.nav-item
+            .nav-tit.one
+                a.nav-links 新品上市 考拉超收
+                span.arr
+            ul.nav-lv.nav-lv2
+                li.nav-item
+                    .nav-tit
+                        a.nav-link 考拉超收产品介绍-预定中
+                li.nav-item
+                    .nav-tit
+                        a.nav-link 限时预订，成为首批用户
+                li.nav-item
+                    .nav-tit
+                        a.nav-link 资讯中心
+                li.nav-item
+                    .nav-tit
+                        a.nav-link 商业合作
+                li.nav-item
+                    .nav-tit
+                        a.nav-link 合作伙伴
+                li.nav-item
+                    .nav-tit
+                        a.nav-link 招贤纳士
+        
+    .back
+        a(href='/')
+    .shadow
+.body
+    .x-header.m-show
+        .menu-head
+            .logo
+                a(href="/")
+                    img(src='http://www.lakala.com/templets/default/image/temp/logo.png')
+            a.menu-btn
+    .x-header.p-show
+        .x-wrap
+            .menu-head
+                .logo
+                    a(href='/')
+                        img(src='http://www.lakala.com/templets/default/image/temp/logo.png')
+                a.menu-btn.m-show(href='javascript:;')
+            .nav-mod
+                ul.nav-lv1.clear
+                    li.nav-item.cur
+                        .nav-tit
+                            a.nav-link(href='/') 首页
+                                span.arr
+                    li.nav-item
+                        .nav-tit
+                            a.nav-link(href='') 关于我们
+                                span.arr 
+                        .two
+                            span.line1
+                            ul.second
+                                li.a
+                                    a(href='/') 关于拉卡拉
+                                li.a
+                                    a(href='/') 关于拉卡拉
+                            span.line2
+                                
+script.
+    $(function() {
+        setTimeout(function() {
+            $("body").removeClass("ov");
+        }, 300);
+        htmlSize(750);
+        //	移动端 点击 菜单按钮 展开/收起 导航层
+        $('.x-header .menu-btn').on('click', function() {
+            var hd = $('body');
+            if (!hd.hasClass('menu-open')) {
+                hd.addClass('menu-open');
+            } else {
+                hd.removeClass('menu-open');
+            }
+        });
+
+        //	移动端 点击 导航链接 收起 弹出导航层（用于解决点击锚点导航在页面没刷新的情况下收起弹出的导航层）
+        $('.navBg,.back a').on('click', function() {
+            $('body').removeClass('menu-open');
+        });
+         
+        //	移动端 点击 导航项的箭头 展开/收起 子级导航
+        $('.nav-mod .arr').on('click', function() {
+            var _this = $(this);
+            var par = _this.closest('.nav-item');
+            if (!par.hasClass('act')) {
+                par.addClass('act').siblings('.nav-item').removeClass('act').children('.nav-lv').slideUp(0);
+                _this.parent().siblings('.nav-lv').slideDown(200);
+            } else {
+                par.removeClass('act').children('.nav-lv').slideUp(200);
+            }
+        });
+
+        if($(".nav-mod.m-show .nav-lv2 .act").length >= 1) {
+            $(".nav-mod.m-show .nav-lv2 .act").closest(".nav-lv2").show();
+        }
+    });
+    /*	rem缩放函数	*/
+    function htmlSize(px) {
+        foo();
+        function foo() {
+            var ww = $(window).width() < 320 ? 320 : $(window).width();
+            if (ww > px) {
+                $('html').css({
+                    'font-size': '.875rem'
+                });
+            } else {
+                $('html').css({
+                    'font-size': (ww / px) * 100 + 'px'
+                });
+            }
+        }
+        $(window).on('resize', foo);
+    }

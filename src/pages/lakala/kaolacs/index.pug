@@ -1,0 +1,34 @@
+doctype html
+html(lang="zh")
+    head
+        include ../../shared/component/head/index.pug
+        meta(name="description",content="考拉超收业务功能介绍，考拉超收由拉卡拉支付服务股份有限公司研发，公司项目团队经过长达1年的时间进行测试、升级、改良，最终为市场呈现出一套完美的业务运营利器，现已全面上市。咨询热线：13880716202")
+        title 考拉超收产品介绍 - 全面上市 - 预订ing - 拉卡拉官方网站
+    body
+        include ../../shared/component/nav/index.pug
+        #wrapper
+            #page-wrapper
+                .container
+                    .row
+                        h2 考拉超收-产品介绍
+                #content
+                        #view
+                            img(src='/static/img/lakala/kaolacs/1.jpg')
+                        #thumbs
+                            #nav-left-thumbs <
+                            - var n=1
+                            #pics-thumbs
+                              while n < 56
+                                img(src='/static/img/lakala/kaolacs/'+(n++)+'.jpg')
+                            #nav-right-thumbs >  
+                .row
+                    section
+                        h3 了解详情或有疑问，别客气请联系我们
+                        p 咨询电话：13880716202 （24hrs X  全日）(备注：微信号 287215760)
+                        p 咨询电话：15114016285 （24hrs X  全日）(备注：微信同号)
+                        p 售后热线：028-61865352（9:00-17:30）
+                        p 地址：成都市金牛区三洞桥11号国贸广场8楼810
+                        p 在线客服和微信咨询在（周一至周日）的（24hrs X  全日）提供服务，具体请关注官网通知。
+
+            include ../../shared/component/footer/index.pug
+   

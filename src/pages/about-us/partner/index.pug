@@ -1,0 +1,36 @@
+doctype html
+html(lang="zh")
+    head
+        include ../../shared/component/head/index.pug
+        meta(name="description",content="0.38%费率,免费pos机不要钱 ,秒到账,费率低,正规一清机,银联认证,全国送货上门.详询：028-61865352")
+        title 合作伙伴 - 拉卡拉官方网站
+    body
+        include ../../shared/component/nav/index.pug
+        #wrapper
+            #page-wrapper
+                .row
+                    .page-img.w-100(style="background:url('http://www.lakala.com/uploads/190227/2-1Z22G4234L50.jpg') no-repeat center;background-size:cover;")
+                        img(src='http://www.lakala.com/uploads/190227/2-1Z22G4234L50.jpg')
+                .container
+                    .row
+                        h2 合作伙伴
+                    .row
+                        .offset-md-1.col-md-10(style='text-align:center')
+                            ul.nav.nav-tabs(role='tablist')
+                                li.nav-item.left
+                                    a.nav-link.active(href='#bank',data-toggle='tab') 银行
+                                        span
+                                            i.fa.fa-bank 
+                                li.nav-item.right
+                                    a.nav-link(href='#business ',data-toggle='tab') 商户
+                                         span
+                                            i.fa.fa-user
+                            .tab-content
+                                #bank.container.tab-pane.in.active
+                                    img.w-100(src='http://www.lakala.com/uploads/190121/2-1Z1211S114a1.png')
+                                #business.container.tab-pane.fade.in
+                                    img.w-100(src='http://www.lakala.com/uploads/190121/2-1Z1211R9311L.png')
+
+
+            include ../../shared/component/footer/index.pug
+   

@@ -1,0 +1,7 @@
+@import url('../../shared/base.css');
+@import url('../../shared/component/footer/index.css');
+.btn-normal {
+    background-color: #00b9f1;
+    border-color: #00b9f1;
+    color: white !important;
+}

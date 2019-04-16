@@ -1,0 +1,5 @@
+@import url('../../shared/base.css');
+@import url('../../shared/component/footer/index.css');
+.table-primary td,.table-primary{
+    background-color: #00b9f1;
+}

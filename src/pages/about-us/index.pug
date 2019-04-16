@@ -1,0 +1,86 @@
+doctype html
+html(lang="zh")
+    include ../shared/head.pug
+    style. 
+        .border-dashed {
+            border-bottom: dashed #D5D5D5 1px
+        }
+        .page-title {
+            background: #03a8e3;
+        }
+        .page-title h1 {
+            width: 100%;
+            font-size: 24px;
+            color: #fff;
+            font-weight: normal;
+            text-transform: uppercase
+        }
+        .page-title h1 a {
+            font-size: 14px;
+            color: #fff;
+        }
+        .mt-10 {
+            margin-top: 10px;
+        }
+        .show-img {
+            width: 100%;
+            max-width: 460px;
+        }
+        a {
+            color: #666;
+            
+        }
+        a:hover {
+            color: #117dc2;
+            text-decoration: none;
+        }
+        .img-width-100 {
+            width: 100%;
+        }
+    body
+        include ../shared/header.pug
+        #wrapper
+            #page-wrapper.container-fluid
+                .row.page-title
+                    .col-md-1
+                    .col-md-10
+                        h1 公司简介 
+                            a company-profile
+                    .col-md-1
+                .row.mt-10
+                    .col-md-1
+                    .col-md-10.border-dashed
+                       | 您现在的位置:
+                       a(href='/') 首页
+                       | >
+                       a(href='/about-us') 关于我们
+                       | >
+                       a 公司简介
+                    .col-md-1
+                .row
+                    .col-md-3
+                        .panel.panel-default
+                            .panel-heading 
+                                p 关于我们
+                                    span about
+                            .panel-body
+                                ul.list-group
+                                    li.list-group-item
+                                        a(href='/about-us') 关于我们
+                                    li.list-group-item
+                                        a(href='/about-us/company-profile') 公司简介
+                                    li.list-group-item
+                                        a(href='/about-us/development-path') 发展历程
+                                    li.list-group-item
+                                        a(href='/about-us/news') 资讯中心
+                    .col-md-9
+                        p 我们为商家接入刷卡机对接银联跨行清算网络，为各银行、商户、持卡人提供专业、稳定、高效的银行卡线上、线下支付服务。
+                        p 我们服务餐饮、娱乐、服装、零售等200万小微商户。
+                        p 我们与中国银联、中国银行、招商银行、支付宝、微信、京东金融等30多家金融机构达成合作关系。
+                        p 我们服务于银联，是提供POS机办理、安装、营销、售后的一体化服务商。
+                        p 我们是新一代信息技术、信息服务积极的实践者与创新者。
+                        p 我们秉承”客户至上、服务至上、安全至上”的宗旨。
+                        img.img-width-100(src='http://www.sclakala.cn/wp-content/uploads/2019/01/percent-sign-1.jpg')
+
+                
+            include ../shared/footer.pug

@@ -1,0 +1,300 @@
+style.
+    .navbar-light .navbar-nav .nav-link {
+        color: rgb(64, 64, 64);
+    }
+    .btco-hover-menu a ,  .navbar > li > a {
+        text-transform: capitalize;
+        padding: 10px 15px;
+    }
+    .btco-hover-menu .active a,
+    .btco-hover-menu .active a:focus,
+    .btco-hover-menu .active a:hover,
+    .btco-hover-menu li a:hover,
+    .btco-hover-menu li a:focus ,
+    .navbar>.show>a,  .navbar>.show>a:focus,  .navbar>.show>a:hover{
+        color: #000;
+        background: transparent;
+        outline: 0;
+    }
+
+
+
+    /*submenu style start from here*/
+
+
+    .dropdown-menu {
+        padding: 0px 0; 
+        margin: 0 0 0; 
+        border: 0px solid transition !important;
+        border: 0px solid rgba(0,0,0,.15);	
+        border-radius: 0px;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+
+    }
+
+    /*first level*/
+    .btco-hover-menu .collapse ul > li:hover > a{background: #f5f5f5;}
+    .btco-hover-menu .collapse ul ul > li:hover > a, .navbar .show .dropdown-menu > li > a:focus, .navbar .show .dropdown-menu > li > a:hover{background: #fff;}
+    /*second level*/
+    .btco-hover-menu .collapse ul ul ul > li:hover > a{background: #fff;}
+
+    /*third level*/
+    .btco-hover-menu .collapse ul ul, .btco-hover-menu .collapse ul ul.dropdown-menu{background:#f5f5f5;}
+    .btco-hover-menu .collapse ul ul ul, .btco-hover-menu .collapse ul ul ul.dropdown-menu{background:#f5f5f5}
+    .btco-hover-menu .collapse ul ul ul ul, .btco-hover-menu .collapse ul ul ul ul.dropdown-menu{background:#f5f5f5}
+
+    /*Drop-down menu work on hover*/
+    .btco-hover-menu{background: none;margin: 0;padding: 0;min-height:20px}
+
+    @media only screen and (max-width: 991px) {
+        .btco-hover-menu .show > .dropdown-toggle::after{
+            transform: rotate(-90deg);
+        }
+    }
+    @media only screen and (min-width: 991px) {
+
+        .btco-hover-menu .collapse ul li{position:relative;}
+        .btco-hover-menu .collapse ul li:hover> ul{display:block}
+        .btco-hover-menu .collapse ul ul{position:absolute;top:100%;left:0;min-width:250px;display:none}
+        /*******/
+        .btco-hover-menu .collapse ul ul li{position:relative}
+        .btco-hover-menu .collapse ul ul li:hover> ul{display:block}
+        .btco-hover-menu .collapse ul ul ul{position:absolute;top:0;left:100%;min-width:250px;display:none}
+        /*******/
+        .btco-hover-menu .collapse ul ul ul li{position:relative}
+        .btco-hover-menu .collapse ul ul ul li:hover ul{display:block}
+        .btco-hover-menu .collapse ul ul ul ul{position:absolute;top:0;left:-100%;min-width:250px;display:none;z-index:1}
+
+    }
+    
+
+    *{margin:0;padding:0;list-style:none;border:none;}
+    body{/*height:2000px;background:#555;*/font-family:'microsoft yahei';}
+    .izl-rmenu{
+            margin-right: 0;
+            width: 82px;
+            position: fixed;
+            right: 2px;
+            top: 65%;
+            /*-webkit-box-shadow: #DDD 0px 1px 5px;
+            -moz-box-shadow: #DDD 0px 1px 5px;
+            box-shadow: #DDD 0px 1px 5px;*/
+            z-index:999;
+    }
+    .izl-rmenu .consult{    
+        background-image: url(http://demo.htmleaf.com/1611/201611101542/images/consult_icon.gif);
+        background-repeat: no-repeat;
+        background-position: center -77px;
+        display: block;
+        height: 76px;
+        width: 82px;
+    }
+    .izl-rmenu .consult .phone {
+        background-color: rgb(247,247,255);
+        position: absolute;
+        width: 160px;
+        left: -160px;
+        top: 0px;
+        line-height: 73px;
+        color: #000;
+        font-size: 18px;
+        text-align: center;
+        display: none;
+        /*box-shadow: #DDD -1px 1px 4px;*/
+    }
+    .izl-rmenu a.consult:hover .phone{display:inline !important;}
+    .izl-rmenu .cart {
+        background-image: url(http://demo.htmleaf.com/1611/201611101542/images/consult_icon.gif);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        display: block;
+        font-size: 12px;
+        line-height: 16px;
+        color: #45BDFF;
+        text-align: center;
+        padding-top: 15px;
+        padding-right: 18px;
+        padding-bottom: 47px;
+        padding-left: 48px;
+    }
+    .izl-rmenu a.cart:hover .pic{display:block;}
+    .izl-rmenu .btn_top {
+        background-image: url(http://demo.htmleaf.com/1611/201611101542/images/float_top.gif);
+        background-repeat: no-repeat;
+        background-position: center top;
+        display: block;
+        height: 39px;
+        width: 82px;
+        -webkit-transition: all 0s ease-in-out;
+        -moz-transition: all 0s ease-in-out;
+        -o-transition: all 0s ease-in-out;
+        transition: all 0s ease-in-out;
+    }
+    .izl-rmenu .btn_top:hover {
+        background-image: url(http://demo.htmleaf.com/1611/201611101542/images/float_top.gif);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    .izl-rmenu .cart .pic {
+        display:none;
+        position: absolute;
+        left: -160px;
+        top: 65px;
+        width: 160px;
+        height: 160px;
+        background:url(http://rs.mgapp.com.cn/WeChat%20Image_20190325171922.png);
+        background-size:100% 100%; 
+    }
+    #udesk-feedback-tab {
+        position: fixed;
+        right: 2px;
+        top: 65%;
+        margin-top: -76px;
+        /*-webkit-box-shadow: #DDD 0px -1px 5px;
+        -moz-box-shadow: #DDD 0px -1px 5px;
+        box-shadow: #DDD 0px -1px 5px;*/
+        z-index: 10000;
+        cursor: pointer;
+        background-image: url(http://demo.htmleaf.com/1611/201611101542/images/consult_icon.gif);
+        background-repeat: no-repeat;
+        background-position: center top;
+        display: block;
+        height: 76px;
+        width: 82px;
+        background-color: #FFF!important;
+        z-index:999;
+    }
+nav.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light.fixed-top.btco-hover-menu
+    .container
+        a.navbar-brand(href='#') 
+            img(src='http://www.sclakala.cn/wp-content/uploads/2018/12/id_07.png')
+        button.navbar-toggler.navbar-toggler-right(type='button',data-toggle='collapse',data-target="#navbarNavDropdown",aria-controls="navbarNavDropdown",aria-expanded="false",aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+        #navbarNavDropdown.collapse.navbar-collapse
+            ul.navbar-nav.ml-auto
+                li.nav-item
+                    a.nav-link(href='/') 首页
+                li.nav-item.dropdown
+                    a#navbarDropdownaboutUs.nav-link.dropdown-toggle(href='#',data-toggle="dropdown",role='button',aria-haspopup="true",aria-expanded="false") 关于我们
+                    ul.dropdown-menu(aria-labelledby="navbarDropdownaboutUs")
+                        li
+                            a.dropdown-item(href='/about-us/company-profile') 公司简介
+                        li
+                            a.dropdown-item(href='/about-us/development-path') 发展历程
+                        li
+                            a.dropdown-item(href='/about-us/news') 咨询中心
+                li.nav-item.dropdown
+                    a#navbarDropdownsolution.nav-link.dropdown-toggle(href='#',data-toggle="dropdown",aria-haspopup="true",aria-expanded="false") 解决方案
+                    ul.dropdown-menu(aria-labelledby="navbarDropdownsolution")
+                        li
+                            a.dropdown-item(href='/solution/convenience-payment') 便民支付
+                        li
+                            a.dropdown-item(href='/solution/lakala-pos-order') POS收单
+                li.nav-item.dropdown
+                    a#navbarDropdownlakala.nav-link.dropdown-toggle(href='#',data-toggle="dropdown",aria-haspopup="true",aria-expanded="false") 拉卡拉
+                    ul.dropdown-menu(aria-labelledby="navbarDropdownlakala")
+                        li
+                            a.dropdown-item(href='#') 拉卡拉智能POS
+                        li
+                            a.dropdown-item(href='#') 拉卡拉收钱宝盒
+                        li 
+                            a.dropdown-item.dropdown-toggle(href='#') 拉卡拉超级收款宝
+                            ul.dropdown-menu
+                                li 
+                                    a.dropdown-item(href="#") 拉卡拉超级收款宝QR65
+                                li 
+                                    a.dropdown-item(href="#") 拉卡拉超级收款宝Q50
+                                li 
+                                    a.dropdown-item(href="#") 拉卡拉超级收款宝SL58
+                        li
+                            a.dropdown-item(href='#') 拉卡拉智能收银台
+                        li
+                            a.dropdown-item(href='#') 拉卡拉全能收款码
+                        li
+                            a.dropdown-item(href='#') 拉卡拉手机收款宝
+                        li
+                            a.dropdown-item(href='#') 拉卡拉POS
+                        li
+                            a.dropdown-item(href='#') 多媒体智能终端
+                li.nav-item.dropdown
+                    a#navbarDropdownLakalaDown.nav-link.dropdown-toggle(href='#',data-toggle="dropdown",aria-haspopup="true",aria-expanded="false") 拉卡拉下载中心
+                    ul.dropdown-menu(aria-labelledby="navbarDropdownLakalaDown")
+                        li
+                            a.dropdown-item(href='/about-us/company-profile') 拉卡拉
+                        li
+                            a.dropdown-item(href='/about-us/company-profile') 商户通
+                        li
+                            a.dropdown-item(href='/about-us/company-profile') 手机收款宝客户端
+                        li
+                            a.dropdown-item(href='/about-us/company-profile') 云码盒子客户端
+                        li
+                            a.dropdown-item(href='/about-us/company-profile') 考拉信用客户端
+                        li
+                            a.dropdown-item(href='/about-us/company-profile') 拉卡拉钱包
+                li.nav-item.dropdown
+                    a#navbarDropdownProduction.nav-link.dropdown-toggle(href='#',data-toggle="dropdown",aria-haspopup="true",aria-expanded="false") 产品中心
+                    ul.dropdown-menu(aria-labelledby="navbarDropdownProduction")
+                        li 
+                            a.dropdown-item.dropdown-toggle(href='#') 拉卡拉旗下-收钱吧扫码王
+                            ul.dropdown-menu
+                                li 
+                                    a.dropdown-item(href="#") 扫码王app下载
+                li.nav-item.dropdown
+                    a#navbarDropdownContact.nav-link.dropdown-toggle(href='#',data-toggle="dropdown",aria-haspopup="true",aria-expanded="false") 联系我们
+                    ul.dropdown-menu(aria-labelledby="navbarDropdownContact")
+                        li
+                            a.dropdown-item(href='/about-us/company-profile') 商业合作
+                        li
+                            a.dropdown-item(href='/about-us/company-profile') 合作伙伴
+                        li
+                            a.dropdown-item(href='/about-us/company-profile') 招贤纳士
+                
+
+div.d-none.d-sm-block
+    .izl-rmenu
+        a.consult
+            .phone(style='display:none') 028-61865352
+        a.cart
+            .pic 
+        a.btn_top(style='display:none',href='javascript:void(0')
+    a#udesk-feedback-tab.udesk-feedback-tab-left(href='http://wpa.qq.com/msgrd?v=3&uin=287215760&site=qq&menu=yes',style='display: block; background-color: black;')
+            
+    script. 
+        $( document ).ready( function () {
+            console.log('hi')
+            $(".btn_top").hide();
+            $(".btn_top").on("click",function(){
+                $('html, body').animate({scrollTop: 0},300);return false;
+            })
+            $(window).bind('scroll resize',function(){
+                if($(window).scrollTop()<=300){
+                $(".btn_top").hide();
+                }else{
+                $(".btn_top").show();
+                }
+            })
+
+            $( '.dropdown-menu a.dropdown-toggle' ).on( 'click', function ( e ) {
+                console.log('fuck')
+                var $el = $( this );
+                var $parent = $( this ).offsetParent( ".dropdown-menu" );
+                if ( !$( this ).next().hasClass( 'show' ) ) {
+                    $( this ).parents( '.dropdown-menu' ).first().find( '.show' ).removeClass( "show" );
+                }
+                var $subMenu = $( this ).next( ".dropdown-menu" );
+                $subMenu.toggleClass( 'show' );
+                
+                $( this ).parent( "li" ).toggleClass( 'show' );
+
+                $( this ).parents( 'li.nav-item.dropdown.show' ).on( 'hidden.bs.dropdown', function ( e ) {
+                    $( '.dropdown-menu .show' ).removeClass( "show" );
+                } );
+                
+                if ( !$parent.parent().hasClass( 'navbar-nav' ) ) {
+                    $el.next().css( { "top": $el[0].offsetTop, "left": $parent.outerWidth() - 4 } );
+                }
+
+                return false;
+            });
+        });

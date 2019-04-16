@@ -1,0 +1,238 @@
+body {
+    font-family: 微软雅黑, Arial, Helvetica, sans-serif;
+}
+
+.main {
+    max-width: 900px;
+    margin: 0 auto
+}
+
+.navbar-brand span {
+    font-size: 12px;
+}
+
+table tr.bg {
+    background: #f2f2f2
+}
+
+.empty {
+    text-align: center;
+    color: #ccc;
+    line-height: 60px;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    background: #fafafa
+}
+
+.progress {
+    margin-bottom: 0;
+    border: 1px solid #f0ad4e
+}
+
+.pagination {
+    margin-top: 0
+}
+
+.article-info p {
+    color: #ccc
+}
+
+.article-content {
+    margin-bottom: 20px
+}
+
+.article-content p {
+    line-height: 25px;
+    color: #999;
+    font-size: 16px;
+    margin: 0
+}
+
+.navbar-right {
+    text-align: right;
+    margin: 0;
+}
+
+#wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@media screen and (max-width:750px) {
+    #wrapper {
+        padding-top: 1rem;
+    }
+}
+
+.mt-10 {
+    margin-top: 10px
+}
+
+.mt-20 {
+    margin-top: 20px
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.right {
+    float: right
+}
+
+.head-cover {
+    width: 70px;
+    height: 70px
+}
+
+.table.no-border>tbody>tr>td,
+.table.no-border>tbody>tr>th {
+    border: 0
+}
+
+.score-box .score {
+    float: left;
+    width: 100%;
+    height: 45px
+}
+
+.score-box .score .number {
+    font-size: 62px;
+    color: #f0ad4e
+}
+
+.score-box .score .unit {
+    font-size: 18px
+}
+
+.huge {
+    font-size: 25px
+}
+
+/* footer {
+    background: url(http://cdsykj.gotoip11.com/wp-content/uploads/2018/12/A.jpg);
+    padding-top: 20px;
+    border-top: 1px solid #000000;
+}
+
+footer b {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    float: left;
+    margin: 5px 0 0;
+    border-bottom: 1px solid #000000;
+    font-weight: normal;
+    color: #000000;
+}
+
+footer font {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+footer .contact a {
+    float: left;
+    margin-right: 10px;
+}
+
+footer .bottom-link {
+    border-top: 1px solid #000000;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+footer input,
+footer textarea {
+    background: #f2f2f2 !important;
+} */
+
+.konghang {
+    width: 100%;
+    height: 10px;
+    overflow: hidden;
+}
+
+
+/**
+header
+**/
+
+header .navbar {
+    background: white;
+}
+
+header .icon-bar {
+    background: #666;
+}
+
+
+/**
+**  页面头图
+**/
+
+.page-img img {
+    display: block;
+    width: 100%;
+}
+
+h2 {
+    font-size: 26px;
+    color: #00b9f1;
+    padding: 65px 0 0;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 18px;
+}
+/**
+    文章
+**/
+
+section p {
+    font-size: 14px;
+    line-height: 1.8;
+    padding-bottom: 30px;
+    text-indent: 2rem;
+    text-align: justify;
+}
+
+.text-intent {
+    text-indent: 20px;
+}
+@media screen and (min-width:751px) {}
+
+@media screen and (max-width:750px) {
+    .page-img {
+        height: 3rem;
+    }
+    .page-img img {
+        display: none;
+    }
+    
+    section p {
+        font-size: 0.28rem;
+        line-height: 1.8;
+        padding-bottom: 30px;
+        text-indent: 0.56rem;
+        text-align: justify;
+        margin: 0 0.28rem;
+    }
+    
+    .card-title {
+        font-size: 0.28rem;
+    }
+    .card-body a {
+        font-size: 0.28rem;
+    }
+}
+
+

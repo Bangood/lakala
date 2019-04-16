@@ -1,0 +1,176 @@
+a.navBg(href='javascript:;') 
+-
+    var navList = {
+        '关于我们': {
+            "公司简介": '/about-us/company-profile',
+            "合作伙伴": '/about-us/partner',
+            "发展历程": '/about-us/development-path'
+        },
+        "拉卡拉": {
+            "拉卡拉APP下载中心": '/lakala/download-center',
+            "拉卡拉智能POS": '/lakala/lakala-smart-pos',
+            "拉卡拉收钱宝盒": '/lakala/lakala-collection-box',
+            "拉卡拉超级收款宝": '/lakala/lakala-super-cashier',
+            "拉卡拉智能收银台": '/lakala/lakala-checkout-counter',
+            "拉卡拉全能收款码": '/lakala/lakala-collection-code',
+            "拉卡拉手机收款宝": '/lakala/lakala-collection-treasure',
+            "拉卡拉POS": '/lakala/lakala-pos',
+            "多媒体智能终端": '/lakala/multimedia-terminal',
+        },
+        "新品上市考拉超收": {
+            "产品介绍": '/lakala/kaolacs',
+            "app下载": '/lakala/download-center/kaolacs',
+            "限时预订成为首批用户": '/others/reserve',
+        }
+    }
+.nav-mod.m-show
+    .logo2
+        img(src='/static/img/shared/component/nav/logo.png')
+    ul.nav-lv.nav-lv1.clear
+        li.nav-item
+            .nav-tit.one
+                a.nav-links 关于我们
+                span.arr
+            ul.nav-lv.nav-lv2
+                li.nav-item
+                    .nav-tit
+                        a.nav-link(href=navList["关于我们"]["公司简介"]) 公司简介
+                li.nav-item
+                    .nav-tit
+                        a.nav-link(href=navList["关于我们"]["发展历程"]) 发展历程
+                li.nav-item
+                    .nav-tit
+                        a.nav-link 资讯中心
+                //- li.nav-item
+                //-     .nav-tit
+                //-         a.nav-link 商业合作
+                li.nav-item
+                    .nav-tit
+                        a.nav-link(href=navList["关于我们"]["合作伙伴"]) 合作伙伴
+                //- li.nav-item
+                //-     .nav-tit
+                //-         a.nav-link 招贤纳士
+        li.nav-item
+            .nav-tit.one
+                a.nav-links 新品上市 考拉超收
+                span.arr
+            ul.nav-lv.nav-lv2
+                li.nav-item
+                    .nav-tit
+                        a.nav-link(href=navList["新品上市考拉超收"]["产品介绍"]) 产品介绍
+                li.nav-item
+                    .nav-tit
+                        a.nav-link(href=navList["新品上市考拉超收"]["app下载"]) app下载
+                li.nav-item
+                    .nav-tit
+                        a.nav-link(href=navList["新品上市考拉超收"]["限时预订成为首批用户"]) 限时预订
+        li.nav-item
+            .nav-tit.one
+                a.nav-links 拉卡拉
+                span.arr
+            ul.nav-lv.nav-lv2
+                li.nav-item
+                    .nav-tit
+                        a.nav-link(href=navList["拉卡拉"]["拉卡拉APP下载中心"]) 拉卡拉APP下载中心
+                li.nav-item
+                    .nav-tit
+                        a.nav-link(href=navList["拉卡拉"]["拉卡拉智能POS"]) 拉卡拉智能POS
+                li.nav-item
+                    .nav-tit
+                        a.nav-link(href=navList["拉卡拉"]["拉卡拉收钱宝盒"]) 拉卡拉收钱宝盒
+                //- li.nav-item
+                //-     .nav-tit
+                //-         a.nav-link(href=navList["拉卡拉"]["拉卡拉超级收款宝"]) 拉卡拉超级收款宝
+                li.nav-item
+                    .nav-tit
+                        a.nav-link(href=navList["拉卡拉"]["拉卡拉智能收银台"]) 拉卡拉智能收银台
+                li.nav-item
+                    .nav-tit
+                        a.nav-link(href=navList["拉卡拉"]["拉卡拉全能收款码"]) 拉卡拉全能收款码
+                li.nav-item
+                    .nav-tit
+                        a.nav-link(href=navList["拉卡拉"]["拉卡拉手机收款宝"]) 拉卡拉手机收款宝
+                li.nav-item
+                    .nav-tit
+                        a.nav-link(href=navList["拉卡拉"]["拉卡拉POS"]) 拉卡拉POS
+                li.nav-item
+                    .nav-tit
+                        a.nav-link(href=navList["拉卡拉"]["多媒体智能终端"]) 多媒体智能终端
+    .back
+        a(href='/')
+    .shadow
+.body
+    .x-header.m-show
+        .menu-head
+            .logo
+                a(href="/")
+                    img(src='/static/img/shared/component/nav/logo.png')
+            a.menu-btn
+    .x-header.p-show
+        .x-wrap
+            .menu-head
+                .logo
+                    a(href='/')
+                        img(src='/static/img/shared/component/nav/logo.png')
+                a.menu-btn.m-show(href='javascript:;')
+            .nav-mod
+                ul.nav-lv1.clear
+                    li.nav-item.cur
+                        .nav-tit
+                            a.nav-link(href='/') 首页
+                                span.arr
+                    li.nav-item
+                        .nav-tit
+                            a.nav-link(href='') 关于我们
+                                span.arr 
+                        .two
+                            span.line1.bs-w-auto
+                            ul.second.bs-w-auto
+                                li.a
+                                    a(href=navList["关于我们"]["公司简介"]) 公司简介
+                                li.a
+                                    a(href=navList["关于我们"]["发展历程"]) 发展历程
+                                li.a
+                                    a(href=navList["关于我们"]["合作伙伴"]) 合作伙伴
+                                
+                            span.line2.bs-w-auto
+                    li.nav-item
+                        .nav-tit
+                            a.nav-link(href='') 新品上市 考拉超收
+                                span.arr 
+                        .two
+                            span.line1.bs-w-auto
+                            ul.second.bs-w-auto
+                                li.a
+                                    a(href=navList["新品上市考拉超收"]["产品介绍"]) 产品介绍
+                                li.a
+                                    a(href=navList["新品上市考拉超收"]["app下载"]) app下载
+                                li.a
+                                    a(href=navList["新品上市考拉超收"]["限时预订成为首批用户"]) 限时预订
+                            span.line2.bs-w-auto
+                    li.nav-item
+                        .nav-tit
+                            a.nav-link(href='') 拉卡拉
+                                span.arr 
+                        .two(style='width:200px;margin-left:-95px')
+                            span.line1
+                            ul.second
+                                li.a.w-200
+                                    a(href=navList["拉卡拉"]["拉卡拉APP下载中心"]) 拉卡拉APP下载中心
+                                li.a.w-200
+                                    a(href=navList["拉卡拉"]["拉卡拉智能POS"]) 拉卡拉智能POS
+                                li.a.w-200
+                                    a(href=navList["拉卡拉"]["拉卡拉收钱宝盒"]) 拉卡拉收钱宝盒
+                                //- li.a.w-200
+                                //-     a(href=navList["拉卡拉"]["拉卡拉超级收款宝"]) 拉卡拉超级收款宝
+                                li.a.w-200
+                                    a(href=navList["拉卡拉"]["拉卡拉智能收银台"]) 拉卡拉智能收银台
+                                li.a.w-200
+                                    a(href=navList["拉卡拉"]["拉卡拉全能收款码"]) 拉卡拉全能收款码
+                                li.a.w-200
+                                    a(href=navList["拉卡拉"]["拉卡拉手机收款宝"]) 拉卡拉手机收款宝
+                                li.a.w-200
+                                    a(href=navList["拉卡拉"]["拉卡拉POS"]) 拉卡拉POS
+                                li.a.w-200
+                                    a(href=navList["拉卡拉"]["多媒体智能终端"]) 多媒体智能终端
+                            span.line2
